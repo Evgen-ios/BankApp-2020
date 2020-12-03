@@ -1,24 +1,122 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xgM-Zs-nbq">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Balance-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BankApp_2020" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Баланс:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Os2-I2-5lp">
+                                <rect key="frame" x="161" y="385.66666666666669" width="106.33333333333331" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="999999.999 ₽" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ipT-6U-ETu">
+                                <rect key="frame" x="116.33333333333333" y="445.66666666666669" width="195.33333333333337" height="34.666666666666686"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.55634254220000001" green="0.97934550050000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Os2-I2-5lp" firstAttribute="centerX" secondItem="ipT-6U-ETu" secondAttribute="centerX" id="2VB-ZY-acd"/>
+                            <constraint firstItem="ipT-6U-ETu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="S3h-HI-fbh"/>
+                            <constraint firstItem="ipT-6U-ETu" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ZBz-Kh-w6L"/>
+                            <constraint firstItem="ipT-6U-ETu" firstAttribute="top" secondItem="Os2-I2-5lp" secondAttribute="bottom" constant="24" id="jom-Xl-ZY6" userLabel="999999.999.top = Баланс:.bottom + 28"/>
+                        </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Balance" image="rublesign.circle" catalog="system" selectedImage="rublesign.circle" id="x2c-Ib-jDG"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="996" y="-257"/>
+        </scene>
+        <!--Loan-->
+        <scene sceneID="VUf-56-HEa">
+            <objects>
+                <viewController id="075-L4-CK1" customClass="ViewController" customModule="BankApp_2020" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hcD-QZ-jc0">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" spacing="45" translatesAutoresizingMaskIntoConstraints="NO" id="c4f-b6-O7D">
+                                <rect key="frame" x="16" y="303.33333333333337" width="396" height="319.33333333333331"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Сумма кредита" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="gdB-dj-DbV">
+                                        <rect key="frame" x="99" y="0.0" width="198" height="38.333333333333336"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Срок (месяцев)" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="ecp-sZ-Lxy">
+                                        <rect key="frame" x="98.666666666666686" y="83.333333333333329" width="199" height="38.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Сумма кредита" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="Y6B-F9-Hyc">
+                                        <rect key="frame" x="99" y="166.66666666666666" width="198" height="38.333333333333343"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ежемесячный плеж: 999999999.9999 ₽" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dpG-Sw-cYb">
+                                        <rect key="frame" x="64" y="250.00000000000003" width="268.33333333333331" height="69.333333333333343"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="G4p-KG-VIF"/>
+                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                        <constraints>
+                            <constraint firstItem="c4f-b6-O7D" firstAttribute="centerX" secondItem="hcD-QZ-jc0" secondAttribute="centerX" id="0Bc-C9-iVK"/>
+                            <constraint firstAttribute="trailing" secondItem="c4f-b6-O7D" secondAttribute="trailing" constant="16" id="1ov-e9-STt"/>
+                            <constraint firstItem="G4p-KG-VIF" firstAttribute="trailing" secondItem="c4f-b6-O7D" secondAttribute="trailing" constant="16" id="rMj-Oz-wQQ"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Loan" image="creditcard" catalog="system" selectedImage="creditcard" id="EHD-gB-Kzv"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zc2-gg-miR" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="995.32710280373828" y="472.35421166306696"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="O50-Q8-NEE">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="xgM-Zs-nbq" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="kdI-98-AvJ">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="oW7-dk-1x0"/>
+                        <segue destination="075-L4-CK1" kind="relationship" relationship="viewControllers" id="pXN-NI-fm9"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SLJ-LE-MyU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="121.73913043478262" y="79.6875"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="creditcard" catalog="system" width="128" height="88"/>
+        <image name="rublesign.circle" catalog="system" width="128" height="121"/>
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
