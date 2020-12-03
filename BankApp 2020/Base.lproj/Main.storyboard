@@ -52,31 +52,39 @@
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" spacing="45" translatesAutoresizingMaskIntoConstraints="NO" id="c4f-b6-O7D">
-                                <rect key="frame" x="16" y="303.33333333333337" width="396" height="319.33333333333331"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="45" translatesAutoresizingMaskIntoConstraints="NO" id="c4f-b6-O7D">
+                                <rect key="frame" x="16" y="303.33333333333337" width="396" height="319.33333333333337"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Сумма кредита" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="gdB-dj-DbV">
-                                        <rect key="frame" x="99" y="0.0" width="198" height="38.333333333333336"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Сумма кредита" textAlignment="natural" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="gdB-dj-DbV">
+                                        <rect key="frame" x="20" y="0.0" width="356" height="38.333333333333336"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Срок (месяцев)" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="ecp-sZ-Lxy">
-                                        <rect key="frame" x="98.666666666666686" y="83.333333333333329" width="199" height="38.333333333333329"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Срок (месяцев)" textAlignment="natural" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="ecp-sZ-Lxy">
+                                        <rect key="frame" x="20" y="83.333333333333371" width="356" height="38.333333333333343"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Сумма кредита" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="Y6B-F9-Hyc">
-                                        <rect key="frame" x="99" y="166.66666666666666" width="198" height="38.333333333333343"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Годовой процент" textAlignment="natural" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="Y6B-F9-Hyc">
+                                        <rect key="frame" x="20" y="166.66666666666669" width="356" height="38.333333333333343"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ежемесячный плеж: 999999999.9999 ₽" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dpG-Sw-cYb">
-                                        <rect key="frame" x="64" y="250.00000000000003" width="268.33333333333331" height="69.333333333333343"/>
+                                        <rect key="frame" x="64" y="250.00000000000009" width="268.33333333333331" height="69.333333333333343"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="29"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Y6B-F9-Hyc" secondAttribute="trailing" constant="20" id="2vh-lw-mUF"/>
+                                    <constraint firstAttribute="trailing" secondItem="gdB-dj-DbV" secondAttribute="trailing" constant="20" id="J8c-nb-iJX"/>
+                                    <constraint firstAttribute="trailing" secondItem="ecp-sZ-Lxy" secondAttribute="trailing" constant="20" id="aNp-HP-Z4a"/>
+                                    <constraint firstItem="gdB-dj-DbV" firstAttribute="leading" secondItem="c4f-b6-O7D" secondAttribute="leading" constant="20" id="dfd-ZQ-IkB"/>
+                                    <constraint firstItem="Y6B-F9-Hyc" firstAttribute="leading" secondItem="c4f-b6-O7D" secondAttribute="leading" constant="20" id="l17-LW-He7"/>
+                                    <constraint firstItem="ecp-sZ-Lxy" firstAttribute="leading" secondItem="c4f-b6-O7D" secondAttribute="leading" constant="20" id="n2b-iA-HA2"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="G4p-KG-VIF"/>
@@ -84,6 +92,7 @@
                         <constraints>
                             <constraint firstItem="c4f-b6-O7D" firstAttribute="centerX" secondItem="hcD-QZ-jc0" secondAttribute="centerX" id="0Bc-C9-iVK"/>
                             <constraint firstAttribute="trailing" secondItem="c4f-b6-O7D" secondAttribute="trailing" constant="16" id="1ov-e9-STt"/>
+                            <constraint firstItem="c4f-b6-O7D" firstAttribute="centerY" secondItem="hcD-QZ-jc0" secondAttribute="centerY" id="afa-CV-LS6"/>
                             <constraint firstItem="G4p-KG-VIF" firstAttribute="trailing" secondItem="c4f-b6-O7D" secondAttribute="trailing" constant="16" id="rMj-Oz-wQQ"/>
                         </constraints>
                     </view>
