@@ -15,6 +15,8 @@
 		7AD6F73B257916D900B51086 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AD6F739257916D900B51086 /* LaunchScreen.storyboard */; };
 		7AD6F745257DF99600B51086 /* LoanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD6F744257DF99600B51086 /* LoanViewController.swift */; };
 		7AD6F74A257F1E2300B51086 /* ExcelFormulas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD6F749257F1E2300B51086 /* ExcelFormulas.swift */; };
+		7AD6F74F257F2DFF00B51086 /* Снимок экрана 2020-12-08 в 11.42.04.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AD6F74D257F2DFF00B51086 /* Снимок экрана 2020-12-08 в 11.42.04.png */; };
+		7AD6F750257F2DFF00B51086 /* Снимок экрана 2020-12-08 в 11.29.00.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AD6F74E257F2DFF00B51086 /* Снимок экрана 2020-12-08 в 11.29.00.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		7AD6F73C257916D900B51086 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7AD6F744257DF99600B51086 /* LoanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanViewController.swift; sourceTree = "<group>"; };
 		7AD6F749257F1E2300B51086 /* ExcelFormulas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExcelFormulas.swift; sourceTree = "<group>"; };
+		7AD6F74D257F2DFF00B51086 /* Снимок экрана 2020-12-08 в 11.42.04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Снимок экрана 2020-12-08 в 11.42.04.png"; sourceTree = "<group>"; };
+		7AD6F74E257F2DFF00B51086 /* Снимок экрана 2020-12-08 в 11.29.00.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Снимок экрана 2020-12-08 в 11.29.00.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +65,7 @@
 		7AD6F72D257916D700B51086 /* BankApp 2020 */ = {
 			isa = PBXGroup;
 			children = (
+				7AD6F74C257F2DBA00B51086 /* Screenshots */,
 				7AD6F72E257916D700B51086 /* AppDelegate.swift */,
 				7AD6F747257DF9AF00B51086 /* ViewControllers */,
 				7AD6F730257916D700B51086 /* SceneDelegate.swift */,
@@ -79,6 +84,15 @@
 				7AD6F744257DF99600B51086 /* LoanViewController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		7AD6F74C257F2DBA00B51086 /* Screenshots */ = {
+			isa = PBXGroup;
+			children = (
+				7AD6F74E257F2DFF00B51086 /* Снимок экрана 2020-12-08 в 11.29.00.png */,
+				7AD6F74D257F2DFF00B51086 /* Снимок экрана 2020-12-08 в 11.42.04.png */,
+			);
+			path = Screenshots;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +155,8 @@
 				7AD6F73B257916D900B51086 /* LaunchScreen.storyboard in Resources */,
 				7AD6F738257916D900B51086 /* Assets.xcassets in Resources */,
 				7AD6F736257916D700B51086 /* Main.storyboard in Resources */,
+				7AD6F750257F2DFF00B51086 /* Снимок экрана 2020-12-08 в 11.29.00.png in Resources */,
+				7AD6F74F257F2DFF00B51086 /* Снимок экрана 2020-12-08 в 11.42.04.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

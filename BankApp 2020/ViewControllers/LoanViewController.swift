@@ -41,11 +41,11 @@ class LoanViewController: UIViewController {
         
         let formatter = NumberFormatter()
         formatter.numberStyle = .currency
-        formatter.currencySymbol = "₽ "
+        formatter.currencySymbol = "₽"
         guard let monthlyPaymentText = formatter.string(from: NSNumber(value: mouthlyPayment)) else { return }
         
     
-        monthlyPaymentLable.text = "Ежемесячный платеж: \(mouthlyPayment)"
+        monthlyPaymentLable.text = "  Ежемесячный платеж: \( monthlyPaymentText)"
     }
     
     // MARK: - Action
