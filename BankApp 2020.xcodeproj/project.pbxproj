@@ -13,6 +13,8 @@
 		7AD6F736257916D700B51086 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AD6F734257916D700B51086 /* Main.storyboard */; };
 		7AD6F738257916D900B51086 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AD6F737257916D900B51086 /* Assets.xcassets */; };
 		7AD6F73B257916D900B51086 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AD6F739257916D900B51086 /* LaunchScreen.storyboard */; };
+		7AD6F745257DF99600B51086 /* LoanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD6F744257DF99600B51086 /* LoanViewController.swift */; };
+		7AD6F74A257F1E2300B51086 /* ExcelFormulas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD6F749257F1E2300B51086 /* ExcelFormulas.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		7AD6F737257916D900B51086 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7AD6F73A257916D900B51086 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7AD6F73C257916D900B51086 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7AD6F744257DF99600B51086 /* LoanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanViewController.swift; sourceTree = "<group>"; };
+		7AD6F749257F1E2300B51086 /* ExcelFormulas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExcelFormulas.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +44,7 @@
 		7AD6F722257916D700B51086 = {
 			isa = PBXGroup;
 			children = (
+				7AD6F749257F1E2300B51086 /* ExcelFormulas.swift */,
 				7AD6F72D257916D700B51086 /* BankApp 2020 */,
 				7AD6F72C257916D700B51086 /* Products */,
 			);
@@ -57,7 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				7AD6F72E257916D700B51086 /* AppDelegate.swift */,
-				7AD6F732257916D700B51086 /* BalanceViewController.swift */,
+				7AD6F747257DF9AF00B51086 /* ViewControllers */,
 				7AD6F730257916D700B51086 /* SceneDelegate.swift */,
 				7AD6F737257916D900B51086 /* Assets.xcassets */,
 				7AD6F739257916D900B51086 /* LaunchScreen.storyboard */,
@@ -65,6 +70,15 @@
 				7AD6F73C257916D900B51086 /* Info.plist */,
 			);
 			path = "BankApp 2020";
+			sourceTree = "<group>";
+		};
+		7AD6F747257DF9AF00B51086 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				7AD6F732257916D700B51086 /* BalanceViewController.swift */,
+				7AD6F744257DF99600B51086 /* LoanViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +151,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7AD6F745257DF99600B51086 /* LoanViewController.swift in Sources */,
+				7AD6F74A257F1E2300B51086 /* ExcelFormulas.swift in Sources */,
 				7AD6F733257916D700B51086 /* BalanceViewController.swift in Sources */,
 				7AD6F72F257916D700B51086 /* AppDelegate.swift in Sources */,
 				7AD6F731257916D700B51086 /* SceneDelegate.swift in Sources */,

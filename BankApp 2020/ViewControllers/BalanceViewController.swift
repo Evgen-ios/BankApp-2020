@@ -10,6 +10,8 @@ import UIKit
 class BalanceViewController: UIViewController {
     @IBOutlet weak var balanceLable: UILabel!
     
+    // MARK: - Propertis
+    
     var balance = 0 {
         didSet {
             balanceLable?.text = "\(balance) ₽"
@@ -31,7 +33,5 @@ class BalanceViewController: UIViewController {
     func updateBalance() {
         balance = Int.random(in: 0 ... 1_000_000)
     }
-
-
 }
 
